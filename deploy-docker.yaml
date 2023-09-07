@@ -46,9 +46,7 @@
   tasks:
     - name: install docker python module
       pip:
-        name: docker
-        state: present
-        executable: /usr/bin/pip3
+        name: docker-py
 
 - name: pull redis
   hosts: ec2-server
